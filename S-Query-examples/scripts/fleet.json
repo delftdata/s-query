@@ -1,0 +1,62 @@
+{
+  "IamFleetRole": "arn:aws:iam::267689942826:role/aws-ec2-spot-fleet-tagging-role",
+  "AllocationStrategy": "capacityOptimized",
+  "TargetCapacity": 3,
+  "ValidFrom": "2021-07-17T10:54:16Z",
+  "ValidUntil": "2022-07-17T10:54:16Z",
+  "SpotPrice": "0.776",
+  "TerminateInstancesWithExpiration": true,
+  "LaunchSpecifications": [
+    {
+      "ImageId": "ami-0ce47becc22b3989c",
+      "InstanceType": "c5.4xlarge",
+      "SubnetId": "subnet-0a71a00d8685c8170",
+      "KeyName": "windows-pc2",
+      "BlockDeviceMappings": [
+        {
+          "DeviceName": "/dev/xvda",
+          "Ebs": {
+            "DeleteOnTermination": true,
+            "SnapshotId": "snap-0ebfd489cd6f51cde",
+            "VolumeSize": 10,
+            "VolumeType": "gp2",
+            "Encrypted": false
+          }
+        }
+      ],
+      "SpotPrice": "0.776",
+      "SecurityGroups": [
+        {
+          "GroupId": "sg-058ab1df85578134c"
+        }
+      ],
+      "TagSpecifications": [
+        {
+          "ResourceType": "instance",
+          "Tags": [
+            {
+              "Key": "type",
+              "Value": "cluster"
+            }
+          ]
+        }
+      ],
+      "IamInstanceProfile": {
+        "Arn": "arn:aws:iam::267689942826:instance-profile/hz-role-profile"
+      },
+      "EbsOptimized": true
+    }
+  ],
+  "Type": "request",
+  "TagSpecifications": [
+    {
+      "ResourceType": "spot-fleet-request",
+      "Tags": [
+        {
+          "Key": "type",
+          "Value": "cluster"
+        }
+      ]
+    }
+  ]
+}

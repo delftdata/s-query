@@ -21,7 +21,7 @@ from .data.query_time import (
 String: title
 The title of the plot
 """
-title = 'SQL query latency distribution (incremental vs. Fulls)'
+title = 'SQL query latency distribution (incremental vs. full snapshot)'
 
 """
 String: x_axis_label

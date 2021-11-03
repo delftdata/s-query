@@ -70,13 +70,7 @@ There are different types of raw result files:
   - `plot_experiments.py`
     Helper scripts that plots all configs at once
   - ### configs
-    This folder houses the different plot configurations and data
-    - `plot_config.py`
-      Example configuration file
-    - `ut_live_phase.py`
-      Config for user tracking job. Live and phase state enabled latencies
-    - `ut_live_snapshot_phase.py`
-      Config for user tracking job. Live, snapshot and phase state enabled latencies
+    This folder houses the different plot configurations and data.
     - ### data
       Folder used for housing the python latency lists
       - `incremental_query.py`

@@ -17,9 +17,9 @@
 %% Matplotlib used the following preamble
 %%   \newcommand{\vanilla}{Jet}
 %%   \usepackage{fontspec}
-%%   \setmainfont{DejaVuSerif.ttf}[Path=\detokenize{C:/Users/Jim/Repos/S-Query-evaluation/.venv/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/}]
+%%   \setmainfont{DejaVuSerif.ttf}[Path=\detokenize{C:/Users/Jim/Repos/s-query/S-Query-evaluation/.venv/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/}]
 %%   \setsansfont{arial.ttf}[Path=\detokenize{C:/Windows/Fonts/}]
-%%   \setmonofont{DejaVuSansMono.ttf}[Path=\detokenize{C:/Users/Jim/Repos/S-Query-evaluation/.venv/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/}]
+%%   \setmonofont{DejaVuSansMono.ttf}[Path=\detokenize{C:/Users/Jim/Repos/s-query/S-Query-evaluation/.venv/Lib/site-packages/matplotlib/mpl-data/fonts/ttf/}]
 %%
 \begingroup%
 \makeatletter%
@@ -2637,7 +2637,7 @@
 \definecolor{textcolor}{rgb}{0.150000,0.150000,0.150000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=3.261079in,y=4.417411in,,base]{\color{textcolor}\sffamily\fontsize{14.400000}{17.280000}\selectfont SQL query latency distribution (incremental vs. Fulls)}%
+\pgftext[x=3.261079in,y=4.417411in,,base]{\color{textcolor}\sffamily\fontsize{14.400000}{17.280000}\selectfont SQL query latency distribution (incremental vs. full snapshot)}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgfsetbuttcap%
